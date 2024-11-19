@@ -1,6 +1,9 @@
-from django.views.generic import TemplateView
+from django.views.generic import ListView
+from account.models import CustomUser
 
 
 
-class HomeView(TemplateView):
-    template_name = 'home.html'
+class HomeView(ListView):
+    template_name = 'home/home.html'
+    model = CustomUser
+    context_object_name = 'users'

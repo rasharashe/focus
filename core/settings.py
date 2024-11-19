@@ -103,6 +103,10 @@ AUTH_PASSWORD_VALIDATORS = [
 AUTH_USER_MODEL = 'account.CustomUser'
 LOGIN_REDIRECT_URL = 'home'
 
+
+HASHID_FIELD_SALT = "a long and secure salt value that is not the same as SECRET_KEY"
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
