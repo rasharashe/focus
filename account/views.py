@@ -30,7 +30,7 @@ def sign_in(request):
             return redirect('home')
     else:
         form = SignInForm()
-    return render(request, 'authentication/classic/sign-in/index.html', {'form': form})
+    return render(request, 'authentication/flows/basic/sign-in.html', {'form': form})
 
 @login_required
 def sign_out(request):

@@ -4,6 +4,6 @@ from account.models import CustomUser
 
 
 class HomeView(ListView):
-    template_name = 'home/home.html'
+    template_name = 'index.html'
     model = CustomUser
     context_object_name = 'users'
